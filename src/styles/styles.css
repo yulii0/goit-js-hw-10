@@ -1,5 +1,15 @@
-.is-hidden{
-  display: none;
+
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 420px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(238, 191, 49, 0.9);
+  border-radius: 8px;
 }
 
 .loader {
@@ -61,8 +71,4 @@
   display: none;
   pointer-events: none;
   height: 0;
-}
-
-.breed-select {
-  width: 200px;
 }
