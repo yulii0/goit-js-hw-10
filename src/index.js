@@ -51,6 +51,14 @@ ref.breedSelect.addEventListener('change', evt => {
   ref.loaderMassage.classList.remove('is-hidden');
   const selectedBreedId = evt.currentTarget.value;
 
+  console.log(selectedBreedId);
+
+if (selectedBreedId === 'mala') {
+  ref.errorMassage.classList.remove('is-hidden');
+  ref.loaderMassage.classList.add('is-hidden');
+}else{ref.errorMassage.classList.add('is-hidden');}
+
+
   createCatByBreed(selectedBreedId)
     .then(data => {
       const { breeds, url } = data[0];
